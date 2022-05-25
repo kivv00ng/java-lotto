@@ -32,8 +32,7 @@ public class InputView {
 
         for (int i = 0; i < manualSize; i++) {
             List<Integer> lottoNumbers =
-                    Arrays.asList(scanner.nextLine().split(", "))
-                            .stream()
+                    Arrays.stream(scanner.nextLine().split(", "))
                             .map(Integer::valueOf)
                             .collect(Collectors.toList());
 
